@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.8.1)
+  - DGActivityIndicatorView (2.1.1)
+  - EVReflection (5.9.0):
+    - EVReflection/Core (= 5.9.0)
+  - EVReflection/Core (5.9.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - SDWebImage (4.4.4):
+    - SDWebImage/Core (= 4.4.4)
+  - SDWebImage/Core (4.4.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - DGActivityIndicatorView
+  - EVReflection
+  - IQKeyboardManagerSwift
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DGActivityIndicatorView
+    - EVReflection
+    - IQKeyboardManagerSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  EVReflection: 52aa00a9035145b1fcf99acae01b782ecc4adad7
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
+
+PODFILE CHECKSUM: e52366bfc9c14c5b5b9d514229b7ff7773c6ca6b
+
+COCOAPODS: 1.5.3
