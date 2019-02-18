@@ -44,7 +44,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fcs-XC-FKc"/>
                     <connections>
-                        <segue destination="v3G-PB-Q1Q" kind="show" identifier="goToJobs" id="vtL-7S-Cyn"/>
+                        <segue destination="v65-Ql-4Zc" kind="show" identifier="goToJobs" id="GxK-5P-HeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,6 +68,146 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldY-sn-vei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="142" y="134"/>
+        </scene>
+        <!--Jobs Filters View Controller-->
+        <scene sceneID="Ki3-Qo-leT">
+            <objects>
+                <viewController storyboardIdentifier="PSJobsFiltersViewController" id="v65-Ql-4Zc" customClass="PSJobsFiltersViewController" customModule="JobFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oaM-4P-3h6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filters_bg" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-2d-axn">
+                                <rect key="frame" x="0.0" y="7" width="414" height="925"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx7-Wp-dzS">
+                                <rect key="frame" x="0.0" y="259" width="414" height="189"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company Name" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-kb-ui7">
+                                        <rect key="frame" x="32" y="27" width="350" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qsj-9L-7cU"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1529411765" green="0.31764705879999999" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Job Title" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AjJ-yn-sWW">
+                                        <rect key="frame" x="32" y="75" width="350" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1529411765" green="0.31764705879999999" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-dq-mpn">
+                                        <rect key="frame" x="32" y="123" width="350" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1529411765" green="0.31764705879999999" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="trailing" secondItem="RV1-dq-mpn" secondAttribute="trailing" id="4j5-RS-hDf"/>
+                                    <constraint firstAttribute="trailing" secondItem="G3O-kb-ui7" secondAttribute="trailing" constant="32" id="52u-sg-NUH"/>
+                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="RV1-dq-mpn" secondAttribute="leading" id="AwZ-3V-mcW"/>
+                                    <constraint firstItem="RV1-dq-mpn" firstAttribute="top" secondItem="AjJ-yn-sWW" secondAttribute="bottom" constant="8" symbolic="YES" id="Fm0-Gm-VfO"/>
+                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="Qx7-Wp-dzS" secondAttribute="leading" constant="32" id="L2L-2g-exT"/>
+                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="trailing" secondItem="AjJ-yn-sWW" secondAttribute="trailing" id="bU9-oh-fI7"/>
+                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="AjJ-yn-sWW" secondAttribute="leading" id="cc2-BC-dcs"/>
+                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="top" secondItem="Qx7-Wp-dzS" secondAttribute="top" constant="27" id="edm-O1-Om9"/>
+                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="height" secondItem="AjJ-yn-sWW" secondAttribute="height" id="gYi-DT-PWs"/>
+                                    <constraint firstItem="AjJ-yn-sWW" firstAttribute="height" secondItem="RV1-dq-mpn" secondAttribute="height" id="pkc-f2-9IH"/>
+                                    <constraint firstItem="AjJ-yn-sWW" firstAttribute="top" secondItem="G3O-kb-ui7" secondAttribute="bottom" constant="8" symbolic="YES" id="wqQ-Hl-EQx"/>
+                                    <constraint firstAttribute="height" constant="189" id="yPe-Mt-vjE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND JOBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="w04-CP-kfO">
+                                <rect key="frame" x="0.0" y="108" width="414" height="171"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69p-Td-wBZ">
+                                <rect key="frame" x="75" y="802" width="264" height="45"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.31764705882352939" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="yny-Nw-FEQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Find jobs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w04-CP-kfO" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="639-qF-LDm"/>
+                            <constraint firstItem="w04-CP-kfO" firstAttribute="width" secondItem="oaM-4P-3h6" secondAttribute="width" id="EBI-Qi-Fdp"/>
+                            <constraint firstItem="H6P-2d-axn" firstAttribute="height" secondItem="oaM-4P-3h6" secondAttribute="height" constant="29" id="FnN-sb-u12"/>
+                            <constraint firstItem="69p-Td-wBZ" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="Ir6-RR-QNz"/>
+                            <constraint firstItem="69p-Td-wBZ" firstAttribute="leading" secondItem="Oyx-Rp-SAF" secondAttribute="leading" constant="75" id="K8z-78-H8L"/>
+                            <constraint firstItem="H6P-2d-axn" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="LYK-tU-pys"/>
+                            <constraint firstItem="H6P-2d-axn" firstAttribute="width" secondItem="oaM-4P-3h6" secondAttribute="width" id="LaT-oI-6nN"/>
+                            <constraint firstItem="w04-CP-kfO" firstAttribute="top" secondItem="Oyx-Rp-SAF" secondAttribute="top" constant="20" id="PGQ-aJ-avM"/>
+                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="top" secondItem="w04-CP-kfO" secondAttribute="bottom" constant="-20" id="QVR-DC-PjL"/>
+                            <constraint firstItem="H6P-2d-axn" firstAttribute="centerY" secondItem="Oyx-Rp-SAF" secondAttribute="centerY" constant="-5.5" id="U3p-pa-Dq4"/>
+                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="leading" secondItem="Oyx-Rp-SAF" secondAttribute="leading" id="UuW-ej-FJP"/>
+                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="VvE-jg-SI3"/>
+                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="centerY" secondItem="Oyx-Rp-SAF" secondAttribute="centerY" constant="-121.5" id="bcq-pY-epO"/>
+                            <constraint firstItem="Oyx-Rp-SAF" firstAttribute="bottom" secondItem="69p-Td-wBZ" secondAttribute="bottom" constant="15" id="dYM-Qw-gx3"/>
+                            <constraint firstItem="Oyx-Rp-SAF" firstAttribute="trailing" secondItem="Qx7-Wp-dzS" secondAttribute="trailing" id="vXw-Sp-Y3M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oyx-Rp-SAF"/>
+                    </view>
+                    <connections>
+                        <segue destination="v3G-PB-Q1Q" kind="show" id="1GD-Ly-oqu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooA-2D-lkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.3333333333335" y="133.25892857142856"/>
         </scene>
         <!--Jobs View Controller-->
         <scene sceneID="7rA-cZ-rOt">
@@ -107,7 +247,6 @@
                             <constraint firstItem="rHD-1P-qOn" firstAttribute="top" secondItem="7u8-xR-bn5" secondAttribute="top" id="SMj-dq-PfM"/>
                             <constraint firstItem="7u8-xR-bn5" firstAttribute="bottom" secondItem="rHD-1P-qOn" secondAttribute="bottom" id="TIz-Mb-Sjh"/>
                             <constraint firstItem="rHD-1P-qOn" firstAttribute="leading" secondItem="7u8-xR-bn5" secondAttribute="leading" id="VfX-g2-J83"/>
-                            <constraint firstItem="7u8-xR-bn5" firstAttribute="trailing" secondItem="f6j-Jy-IDd" secondAttribute="trailing" constant="20" id="WsF-VE-uFT"/>
                             <constraint firstItem="f6j-Jy-IDd" firstAttribute="leading" secondItem="7u8-xR-bn5" secondAttribute="leading" constant="20" id="baX-sX-fsI"/>
                             <constraint firstItem="f6j-Jy-IDd" firstAttribute="centerY" secondItem="7u8-xR-bn5" secondAttribute="centerY" id="hql-gx-lGn"/>
                             <constraint firstItem="7u8-xR-bn5" firstAttribute="trailing" secondItem="rHD-1P-qOn" secondAttribute="trailing" id="ui8-zW-uDQ"/>
@@ -124,11 +263,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwP-hC-xoe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904.3478260869567" y="133.92857142857142"/>
+            <point key="canvasLocation" x="2761" y="134"/>
         </scene>
     </scenes>
     <resources>
         <image name="ProgressSoft" width="700" height="395"/>
+        <image name="filters_bg" width="1920" height="1080"/>
         <image name="logo" width="800" height="578"/>
     </resources>
 </document>

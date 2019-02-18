@@ -25,6 +25,8 @@
 		51FEEAB6221AB88A00FE75DC /* PSSearchGovObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEAB5221AB88A00FE75DC /* PSSearchGovObject.swift */; };
 		51FEEABB221AC31000FE75DC /* TBGeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEABA221AC31000FE75DC /* TBGeneralHelper.swift */; };
 		51FEEABE221AC32700FE75DC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEABD221AC32700FE75DC /* Reachability.swift */; };
+		51FEEAC1221ACB3000FE75DC /* PSJobsFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEAC0221ACB3000FE75DC /* PSJobsFiltersViewController.swift */; };
+		51FEEAC4221ACEF200FE75DC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEAC3221ACEF200FE75DC /* UIView.swift */; };
 		7DD6146BFD2F63FD17B4A3C6 /* Pods_JobFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B01C18EF9BD072274AAF454 /* Pods_JobFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		51FEEAB5221AB88A00FE75DC /* PSSearchGovObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSearchGovObject.swift; sourceTree = "<group>"; };
 		51FEEABA221AC31000FE75DC /* TBGeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBGeneralHelper.swift; sourceTree = "<group>"; };
 		51FEEABD221AC32700FE75DC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		51FEEAC0221ACB3000FE75DC /* PSJobsFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSJobsFiltersViewController.swift; sourceTree = "<group>"; };
+		51FEEAC3221ACEF200FE75DC /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8B01C18EF9BD072274AAF454 /* Pods_JobFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A282A2322665B2D78E09F0E5 /* Pods-JobFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JobFinder/Pods-JobFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +112,7 @@
 		51B8C6CF221979D100064EB4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				51FEEAC2221ACEE800FE75DC /* New Group */,
 				51B8C6D422197A7700064EB4 /* Apis.swift */,
 				51B8C6D622197A8100064EB4 /* Configurations.swift */,
 			);
@@ -137,6 +142,7 @@
 		51B8C6D222197A0D00064EB4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				51FEEABF221ACAF200FE75DC /* PSJobsFiltersViewController */,
 				51B8C6E922197DF300064EB4 /* PSJobsViewController */,
 				51B8C6E722197D0600064EB4 /* PSSplashViewController */,
 			);
@@ -229,6 +235,22 @@
 				51FEEABD221AC32700FE75DC /* Reachability.swift */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		51FEEABF221ACAF200FE75DC /* PSJobsFiltersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51FEEAC0221ACB3000FE75DC /* PSJobsFiltersViewController.swift */,
+			);
+			path = PSJobsFiltersViewController;
+			sourceTree = "<group>";
+		};
+		51FEEAC2221ACEE800FE75DC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				51FEEAC3221ACEF200FE75DC /* UIView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E540995CC0B34334E23CCA48 /* Frameworks */ = {
@@ -391,8 +413,10 @@
 				51B8C6D522197A7700064EB4 /* Apis.swift in Sources */,
 				51B8C6EF22197F4B00064EB4 /* PSJobsCellView.swift in Sources */,
 				51B8C6EB22197E0B00064EB4 /* PSJobsViewController.swift in Sources */,
+				51FEEAC1221ACB3000FE75DC /* PSJobsFiltersViewController.swift in Sources */,
 				51FEEABB221AC31000FE75DC /* TBGeneralHelper.swift in Sources */,
 				51B8C6E222197B3100064EB4 /* TBMainBusinessManager.swift in Sources */,
+				51FEEAC4221ACEF200FE75DC /* UIView.swift in Sources */,
 				51B8C6F22219831F00064EB4 /* PSGitHubJobObject.swift in Sources */,
 				51FEEAB6221AB88A00FE75DC /* PSSearchGovObject.swift in Sources */,
 				51B8C6D722197A8100064EB4 /* Configurations.swift in Sources */,
