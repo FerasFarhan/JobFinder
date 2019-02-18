@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PSJobsCellView: UITableViewCell {
 
@@ -16,16 +17,37 @@ class PSJobsCellView: UITableViewCell {
     @IBOutlet weak var locationLbl: UILabel!
     @IBOutlet weak var postdateLbl: UILabel!
 
+    var gitHubJobObject:PSGitHubJobObject! {
+        didSet {
+            if let stURL = URL(string: gitHubJobObject.company_logo) {
+                self.companyLogoImageView.sd_setImage(with: stURL) { (image, error, SDIm, url) in
+                    if error != nil || image == nil {
+                        self.companyLogoImageView.image = UIImage(named: "default_image")
+                    }
+                }
+            }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+            self.jobTitleLbl.text = self.gitHubJobObject.title
+            self.companyNameLbl.text = self.gitHubJobObject.company
+            self.locationLbl.text = self.gitHubJobObject.location
+            self.postdateLbl.text = self.gitHubJobObject.created_at
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    var searchGovObject:PSSearchGovObject! {
+        didSet {
+            self.jobTitleLbl.text = self.searchGovObject.position_title
+            self.companyNameLbl.text = self.searchGovObject.organization_name
 
-        // Configure the view for the selected state
+            let locations = NSMutableString()
+
+            for location in self.searchGovObject.locations {
+                locations.append(location)
+                locations.append(" ")
+            }
+
+            self.locationLbl.text = "\(locations)"
+            self.postdateLbl.text = self.searchGovObject.start_date
+        }
     }
-    
 }

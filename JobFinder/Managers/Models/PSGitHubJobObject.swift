@@ -1,5 +1,5 @@
 //
-//  SPGitHubJobObject.swift
+//  PSGitHubJobObject.swift
 //  JobFinder
 //
 //  Created by Feras Farhan on 2/17/19.
@@ -9,7 +9,7 @@
 import UIKit
 import EVReflection
 
-class SPGitHubJobObject: EVObject {
+class PSGitHubJobObject: EVObject {
 
     var id = ""
     var type = ""

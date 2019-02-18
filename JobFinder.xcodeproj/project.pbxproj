@@ -17,12 +17,12 @@
 		51B8C6DA22197A9900064EB4 /* TBLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6D922197A9900064EB4 /* TBLogManager.swift */; };
 		51B8C6E022197B2B00064EB4 /* TBConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6DF22197B2B00064EB4 /* TBConnectionManager.swift */; };
 		51B8C6E222197B3100064EB4 /* TBMainBusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6E122197B3100064EB4 /* TBMainBusinessManager.swift */; };
-		51B8C6E422197B3900064EB4 /* TBUserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6E322197B3900064EB4 /* TBUserObject.swift */; };
 		51B8C6E622197B9100064EB4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51B8C6E522197B9100064EB4 /* Default-568h@2x.png */; };
 		51B8C6EB22197E0B00064EB4 /* PSJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6EA22197E0B00064EB4 /* PSJobsViewController.swift */; };
 		51B8C6EF22197F4B00064EB4 /* PSJobsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6ED22197F4B00064EB4 /* PSJobsCellView.swift */; };
 		51B8C6F022197F4B00064EB4 /* PSJobsCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B8C6EE22197F4B00064EB4 /* PSJobsCellView.xib */; };
-		51B8C6F22219831F00064EB4 /* SPGitHubJobObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6F12219831F00064EB4 /* SPGitHubJobObject.swift */; };
+		51B8C6F22219831F00064EB4 /* PSGitHubJobObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6F12219831F00064EB4 /* PSGitHubJobObject.swift */; };
+		51FEEAB6221AB88A00FE75DC /* PSSearchGovObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEAB5221AB88A00FE75DC /* PSSearchGovObject.swift */; };
 		7DD6146BFD2F63FD17B4A3C6 /* Pods_JobFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B01C18EF9BD072274AAF454 /* Pods_JobFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,12 +40,12 @@
 		51B8C6D922197A9900064EB4 /* TBLogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLogManager.swift; sourceTree = "<group>"; };
 		51B8C6DF22197B2B00064EB4 /* TBConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBConnectionManager.swift; sourceTree = "<group>"; };
 		51B8C6E122197B3100064EB4 /* TBMainBusinessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBMainBusinessManager.swift; sourceTree = "<group>"; };
-		51B8C6E322197B3900064EB4 /* TBUserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserObject.swift; sourceTree = "<group>"; };
 		51B8C6E522197B9100064EB4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		51B8C6EA22197E0B00064EB4 /* PSJobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSJobsViewController.swift; sourceTree = "<group>"; };
 		51B8C6ED22197F4B00064EB4 /* PSJobsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSJobsCellView.swift; sourceTree = "<group>"; };
 		51B8C6EE22197F4B00064EB4 /* PSJobsCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSJobsCellView.xib; sourceTree = "<group>"; };
-		51B8C6F12219831F00064EB4 /* SPGitHubJobObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPGitHubJobObject.swift; sourceTree = "<group>"; };
+		51B8C6F12219831F00064EB4 /* PSGitHubJobObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSGitHubJobObject.swift; sourceTree = "<group>"; };
+		51FEEAB5221AB88A00FE75DC /* PSSearchGovObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSearchGovObject.swift; sourceTree = "<group>"; };
 		8B01C18EF9BD072274AAF454 /* Pods_JobFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A282A2322665B2D78E09F0E5 /* Pods-JobFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JobFinder/Pods-JobFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,8 +169,8 @@
 		51B8C6DD22197AFF00064EB4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				51B8C6E322197B3900064EB4 /* TBUserObject.swift */,
-				51B8C6F12219831F00064EB4 /* SPGitHubJobObject.swift */,
+				51B8C6F12219831F00064EB4 /* PSGitHubJobObject.swift */,
+				51FEEAB5221AB88A00FE75DC /* PSSearchGovObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -340,14 +340,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				51B8C6C0221972CD00064EB4 /* PSSplashViewController.swift in Sources */,
-				51B8C6E422197B3900064EB4 /* TBUserObject.swift in Sources */,
 				51B8C6E022197B2B00064EB4 /* TBConnectionManager.swift in Sources */,
 				51B8C6BE221972CD00064EB4 /* AppDelegate.swift in Sources */,
 				51B8C6D522197A7700064EB4 /* Apis.swift in Sources */,
 				51B8C6EF22197F4B00064EB4 /* PSJobsCellView.swift in Sources */,
 				51B8C6EB22197E0B00064EB4 /* PSJobsViewController.swift in Sources */,
 				51B8C6E222197B3100064EB4 /* TBMainBusinessManager.swift in Sources */,
-				51B8C6F22219831F00064EB4 /* SPGitHubJobObject.swift in Sources */,
+				51B8C6F22219831F00064EB4 /* PSGitHubJobObject.swift in Sources */,
+				51FEEAB6221AB88A00FE75DC /* PSSearchGovObject.swift in Sources */,
 				51B8C6D722197A8100064EB4 /* Configurations.swift in Sources */,
 				51B8C6DA22197A9900064EB4 /* TBLogManager.swift in Sources */,
 			);

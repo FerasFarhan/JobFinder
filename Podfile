@@ -9,6 +9,6 @@ target 'JobFinder' do
     pod 'Alamofire' # used for api calling
     pod 'SDWebImage' # used for loading online images 
     pod 'EVReflection' # used for dynamic json parsing 
-    pod 'DGActivityIndicatorView' # pretty loading indi
+    pod 'DGActivityIndicatorView' # pretty loading indicator
 
 end

@@ -19,4 +19,4 @@ let CUSTOM_ERROR_CODE  = 30004
 
 // MARK: API CONFIGURATION
 let API_URL_GITHUB = "https://jobs.github.com/positions.json"
-let API_URL_SEARCH_GOV = "https://www.anthiss.com/api/v2"
+let API_URL_SEARCH_GOV = "https://jobs.search.gov/jobs/search.json"
