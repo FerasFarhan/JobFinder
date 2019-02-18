@@ -9,6 +9,7 @@
 import UIKit
 import GooglePlaces
 import GooglePlacePicker
+import CoreLocation
 
 class PSJobsFiltersViewController: UIViewController {
 
@@ -18,6 +19,8 @@ class PSJobsFiltersViewController: UIViewController {
 
     var selectedPlace:GMSPlace!
 
+    var locationManager = CLLocationManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,12 +28,31 @@ class PSJobsFiltersViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.initView()
+        self.getLocation()
     }
     
     func initView() {
         self.title = "Find Jobs"
         self.navigationItem.hidesBackButton = true
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+    func getLocation() {
+
+        self.locationManager = CLLocationManager()
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+
+        if CLLocationManager.locationServicesEnabled() {
+            if CLLocationManager.authorizationStatus() == CLAuthorizationStatus.denied {
+                // CLAuthorizationStatus.denied
+            }
+            else if CLLocationManager.authorizationStatus() != CLAuthorizationStatus.authorizedWhenInUse {
+                self.locationManager.requestWhenInUseAuthorization()
+            }
+            else{
+                self.locationManager.startUpdatingLocation()
+            }
+        }
     }
 
     // MARK: - Navigation

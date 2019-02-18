@@ -96,7 +96,7 @@ class PSJobsViewController: UIViewController {
                     self.noDataLable.isHidden = true
                     self.listTableView.reloadData()
 
-                    let jobCount = self.searchGovArray.count + self.searchGovArray.count
+                    let jobCount = self.gitHubJobsArray.count + self.searchGovArray.count
 
                     if jobCount > 1 {
                         self.title = "\(jobCount) Jobs Found"
@@ -123,10 +123,10 @@ extension PSJobsViewController: UITableViewDelegate, UITableViewDataSource {
         let lable = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
 
         if section == 0 {
-            lable.text = "GitHub Jobs"
+            lable.text = "   GitHub Jobs"
         }
         else {
-            lable.text = "Search Gov Jobs"
+            lable.text = "   Search Gov Jobs"
         }
 
         lable.backgroundColor = .gray
@@ -138,6 +138,15 @@ extension PSJobsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+
+        if section == 0 && self.gitHubJobsArray.count == 0 {
+            return 0
+        }
+
+        if section == 1 && self.searchGovArray.count == 0 {
+            return 0
+        }
+
         return 30
     }
 

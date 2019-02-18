@@ -9,6 +9,6 @@
 import Foundation
 
 // MARK: LOG CONFIGURATION
-let ENABLE_DEBUG_MODE = false
+let ENABLE_DEBUG_MODE = true
 
-let GOOGLE_API_KEY = "AIzaSyDA12570xkoShEdQPk645DvegjdfQjyOtc"
+let GOOGLE_API_KEY = "AIzaSyD0iQLeh6qlX2ojwbfyXZbd20GfQIo--w0"
