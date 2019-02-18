@@ -11,4 +11,9 @@ target 'JobFinder' do
     pod 'EVReflection' # used for dynamic json parsing 
     pod 'DGActivityIndicatorView' # pretty loading indicator
 
+    # Google Places SDK
+    pod 'GooglePlaces'
+    pod 'GooglePlacePicker'
+    pod 'GoogleMaps'
+
 end

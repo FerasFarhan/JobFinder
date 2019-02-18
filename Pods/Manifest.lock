@@ -4,6 +4,16 @@ PODS:
   - EVReflection (5.9.0):
     - EVReflection/Core (= 5.9.0)
   - EVReflection/Core (5.9.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.7.0):
+    - GoogleMaps (= 2.7.0)
+    - GooglePlaces (= 2.7.0)
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
   - IQKeyboardManagerSwift (6.2.0)
   - SDWebImage (4.4.4):
     - SDWebImage/Core (= 4.4.4)
@@ -13,6 +23,9 @@ DEPENDENCIES:
   - Alamofire
   - DGActivityIndicatorView
   - EVReflection
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
   - IQKeyboardManagerSwift
   - SDWebImage
 
@@ -21,6 +34,9 @@ SPEC REPOS:
     - Alamofire
     - DGActivityIndicatorView
     - EVReflection
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
     - IQKeyboardManagerSwift
     - SDWebImage
 
@@ -28,9 +44,12 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   EVReflection: 52aa00a9035145b1fcf99acae01b782ecc4adad7
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
 
-PODFILE CHECKSUM: e52366bfc9c14c5b5b9d514229b7ff7773c6ca6b
+PODFILE CHECKSUM: 9154015cdf798ce19c7aee54ec247f3c5867c40f
 
 COCOAPODS: 1.5.3

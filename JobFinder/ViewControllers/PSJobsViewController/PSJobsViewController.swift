@@ -8,38 +8,95 @@
 
 import UIKit
 import DGActivityIndicatorView
+import SafariServices
 
 class PSJobsViewController: UIViewController {
 
     @IBOutlet weak var activityView : DGActivityIndicatorView!
     @IBOutlet weak var listTableView:UITableView!
+    @IBOutlet weak var noDataLable:UILabel!
 
     var gitHubJobsArray = [PSGitHubJobObject]()
     var searchGovArray = [PSSearchGovObject]()
 
     override func viewDidLoad() {
+        self.title = "Jobs Results"
         super.viewDidLoad()
+        self.initView()
         self.customizeActivityIndicatorView()
+        self.getGithubJobs()
+    }
+
+    func initView() {
+        self.navigationItem.hidesBackButton = true
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
     func customizeActivityIndicatorView() {
         self.activityView.type = DGActivityIndicatorAnimationType.ballScaleRippleMultiple
-        self.activityView.tintColor = .red
+        self.activityView.tintColor = .black
         self.activityView.size = 40.0
-        self.activityView.isHidden = false
+        self.activityView.backgroundColor = .clear
         self.activityView.startAnimating()
     }
 
-    /*
-    // MARK: - Navigation
+    func getGithubJobs() {
+        self.activityView.isHidden = false
+        self.listTableView.isHidden = true
+        self.noDataLable.isHidden = true
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        TBMainBusinessManager().getGithubJobs { (error, message, resultArray) in
+
+            if !Reachability.isConnectedToNetwork() {
+                self.noDataLable.text = "Please check your internet connection"
+                self.activityView.isHidden = true
+                self.listTableView.isHidden = true
+                self.noDataLable.isHidden = false
+            }
+            else {
+                if error == nil,
+                    resultArray.count > 0,
+                    let tempArray = resultArray[0] as? [PSGitHubJobObject] {
+                    self.gitHubJobsArray = tempArray
+                }
+
+                self.getSearchGovJobs()
+            }
+        }
     }
-    */
 
+    func getSearchGovJobs() {
+
+        TBMainBusinessManager().getSearchGovJobs { (error, message, resultArray) in
+
+            if !Reachability.isConnectedToNetwork() {
+                self.noDataLable.text = "Please check your internet connection"
+                self.activityView.isHidden = true
+                self.listTableView.isHidden = true
+                self.noDataLable.isHidden = false
+            }
+            else {
+                if error == nil,
+                    resultArray.count > 0,
+                    let tempArray = resultArray[0] as? [PSSearchGovObject] {
+                    self.searchGovArray = tempArray
+                }
+
+                if self.searchGovArray.count > 0 || self.gitHubJobsArray.count > 0 {
+                    self.activityView.isHidden = true
+                    self.listTableView.isHidden = false
+                    self.noDataLable.isHidden = true
+                    self.listTableView.reloadData()
+                }
+                else {
+                    self.noDataLable.text = "No Available Data"
+                    self.activityView.isHidden = true
+                    self.listTableView.isHidden = true
+                    self.noDataLable.isHidden = false
+                }
+            }
+        }
+    }
 }
 
 extension PSJobsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -48,10 +105,10 @@ extension PSJobsViewController: UITableViewDelegate, UITableViewDataSource {
         let lable = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
 
         if section == 0 {
-            lable.text = "GitHub Jobs"
+            lable.text = "  GitHub Jobs"
         }
         else {
-            lable.text = "Search Gov Jobs"
+            lable.text = "  Search Gov Jobs"
         }
 
         lable.backgroundColor = .gray
@@ -102,9 +159,44 @@ extension PSJobsViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        var urlString = ""
+
+        if indexPath.section == 0 {
+            let object = self.gitHubJobsArray[indexPath.row]
+            urlString = object.url
+        }
+        else {
+            let object = self.searchGovArray[indexPath.row]
+            urlString = object.url
+        }
+
+        self.openURL(urlString: urlString)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 154
+    }
+
+    func openURL(urlString: String) {
+
+        if let url = URL(string: urlString) {
+            let svc = SFSafariViewController(url: url)
+            self.present(svc, animated: true, completion: nil)
+        }
+        else {
+            TBLogManager.printLog("error urlString = ", object: urlString as AnyObject?, senderClass: self.self)
+            self.showAlertView(title: "Oops!", message: "Details unavailable right now, please try again later")
+        }
+    }
+
+    func showAlertView(title:String, message:String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+
+        let okAction = UIAlertAction(title: "Ok", style: .default) { (action:UIAlertAction) in
+            print("You've pressed Ok");
+        }
+
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }

@@ -36,17 +36,16 @@ class PSJobsCellView: UITableViewCell {
 
     var searchGovObject:PSSearchGovObject! {
         didSet {
+
+            self.companyLogoImageView.image = UIImage(named: "default_image")
+            
             self.jobTitleLbl.text = self.searchGovObject.position_title
             self.companyNameLbl.text = self.searchGovObject.organization_name
 
-            let locations = NSMutableString()
-
-            for location in self.searchGovObject.locations {
-                locations.append(location)
-                locations.append(" ")
+            if self.searchGovObject.locations.count > 0 {
+                self.locationLbl.text = self.searchGovObject.locations[0]
             }
 
-            self.locationLbl.text = "\(locations)"
             self.postdateLbl.text = self.searchGovObject.start_date
         }
     }

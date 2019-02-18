@@ -81,6 +81,18 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
+## GoogleMaps
+
+Copyright 2018 Google
+
+## GooglePlacePicker
+
+Copyright 2018 Google
+
+## GooglePlaces
+
+Copyright 2018 Google
+
 ## IQKeyboardManagerSwift
 
 MIT License

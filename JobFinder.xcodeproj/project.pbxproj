@@ -23,6 +23,8 @@
 		51B8C6F022197F4B00064EB4 /* PSJobsCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B8C6EE22197F4B00064EB4 /* PSJobsCellView.xib */; };
 		51B8C6F22219831F00064EB4 /* PSGitHubJobObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6F12219831F00064EB4 /* PSGitHubJobObject.swift */; };
 		51FEEAB6221AB88A00FE75DC /* PSSearchGovObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEAB5221AB88A00FE75DC /* PSSearchGovObject.swift */; };
+		51FEEABB221AC31000FE75DC /* TBGeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEABA221AC31000FE75DC /* TBGeneralHelper.swift */; };
+		51FEEABE221AC32700FE75DC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEABD221AC32700FE75DC /* Reachability.swift */; };
 		7DD6146BFD2F63FD17B4A3C6 /* Pods_JobFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B01C18EF9BD072274AAF454 /* Pods_JobFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		51B8C6EE22197F4B00064EB4 /* PSJobsCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSJobsCellView.xib; sourceTree = "<group>"; };
 		51B8C6F12219831F00064EB4 /* PSGitHubJobObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSGitHubJobObject.swift; sourceTree = "<group>"; };
 		51FEEAB5221AB88A00FE75DC /* PSSearchGovObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSearchGovObject.swift; sourceTree = "<group>"; };
+		51FEEABA221AC31000FE75DC /* TBGeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBGeneralHelper.swift; sourceTree = "<group>"; };
+		51FEEABD221AC32700FE75DC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		8B01C18EF9BD072274AAF454 /* Pods_JobFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A282A2322665B2D78E09F0E5 /* Pods-JobFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JobFinder/Pods-JobFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +117,8 @@
 		51B8C6D0221979E400064EB4 /* Libraries and Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				51FEEABC221AC31F00FE75DC /* Reachability */,
+				51FEEAB9221AC30000FE75DC /* TBGeneralHelper */,
 				51B8C6D822197A8E00064EB4 /* TBLogManager */,
 			);
 			path = "Libraries and Helpers";
@@ -209,6 +215,22 @@
 			path = PSJobsCellView;
 			sourceTree = "<group>";
 		};
+		51FEEAB9221AC30000FE75DC /* TBGeneralHelper */ = {
+			isa = PBXGroup;
+			children = (
+				51FEEABA221AC31000FE75DC /* TBGeneralHelper.swift */,
+			);
+			path = TBGeneralHelper;
+			sourceTree = "<group>";
+		};
+		51FEEABC221AC31F00FE75DC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				51FEEABD221AC32700FE75DC /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		E540995CC0B34334E23CCA48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +251,7 @@
 				51B8C6B7221972CD00064EB4 /* Frameworks */,
 				51B8C6B8221972CD00064EB4 /* Resources */,
 				9978F1CDB6A4A3B23FC070EF /* [CP] Embed Pods Frameworks */,
+				2B95C37DD0F0956030DDABE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,6 +311,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B95C37DD0F0956030DDABE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JobFinder/Pods-JobFinder-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JobFinder/Pods-JobFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9978F1CDB6A4A3B23FC070EF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,12 +384,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FEEABE221AC32700FE75DC /* Reachability.swift in Sources */,
 				51B8C6C0221972CD00064EB4 /* PSSplashViewController.swift in Sources */,
 				51B8C6E022197B2B00064EB4 /* TBConnectionManager.swift in Sources */,
 				51B8C6BE221972CD00064EB4 /* AppDelegate.swift in Sources */,
 				51B8C6D522197A7700064EB4 /* Apis.swift in Sources */,
 				51B8C6EF22197F4B00064EB4 /* PSJobsCellView.swift in Sources */,
 				51B8C6EB22197E0B00064EB4 /* PSJobsViewController.swift in Sources */,
+				51FEEABB221AC31000FE75DC /* TBGeneralHelper.swift in Sources */,
 				51B8C6E222197B3100064EB4 /* TBMainBusinessManager.swift in Sources */,
 				51B8C6F22219831F00064EB4 /* PSGitHubJobObject.swift in Sources */,
 				51FEEAB6221AB88A00FE75DC /* PSSearchGovObject.swift in Sources */,

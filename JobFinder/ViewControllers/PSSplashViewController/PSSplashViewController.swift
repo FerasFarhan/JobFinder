@@ -14,6 +14,7 @@ class PSSplashViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.perform(#selector(startApp), with: nil, afterDelay: 2)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     @objc fileprivate func startApp() {

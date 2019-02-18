@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="7YC-Rb-2c1">
-                        <rect key="frame" x="5" y="9" width="79" height="72"/>
+                        <rect key="frame" x="5" y="42" width="79" height="72"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="G69-3z-dxp">
                         <rect key="frame" x="92" y="9" width="195" height="51"/>
@@ -47,21 +47,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17-2-2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf5-a2-Zrc">
-                        <rect key="frame" x="203.5" y="126" width="63.5" height="21"/>
+                        <rect key="frame" x="207.5" y="126" width="59.5" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="DAZ-c5-raG"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-8y-Jrc">
-                        <rect key="frame" x="0.0" y="153" width="286" height="1"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="IhL-fU-InD"/>
-                        </constraints>
-                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="fcg-gt-TOK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="76" id="92X-OI-olD"/>
@@ -71,24 +64,24 @@
                     <constraint firstItem="G69-3z-dxp" firstAttribute="leading" secondItem="7YC-Rb-2c1" secondAttribute="trailing" constant="8" symbolic="YES" id="LkP-pl-7zL"/>
                     <constraint firstItem="28O-zD-Rho" firstAttribute="top" secondItem="G69-3z-dxp" secondAttribute="bottom" constant="8" symbolic="YES" id="P22-wQ-oTh"/>
                     <constraint firstItem="G69-3z-dxp" firstAttribute="trailing" secondItem="28O-zD-Rho" secondAttribute="trailing" id="QXN-df-RKf"/>
-                    <constraint firstItem="7YC-Rb-2c1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="Xrs-M9-AW2"/>
+                    <constraint firstItem="7YC-Rb-2c1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="31" id="Xrs-M9-AW2"/>
                     <constraint firstItem="28O-zD-Rho" firstAttribute="leading" secondItem="fcg-gt-TOK" secondAttribute="leading" id="ZhV-Sj-yel"/>
-                    <constraint firstItem="7YC-Rb-2c1" firstAttribute="top" secondItem="G69-3z-dxp" secondAttribute="top" id="dbB-Ra-txw"/>
+                    <constraint firstItem="7YC-Rb-2c1" firstAttribute="top" secondItem="G69-3z-dxp" secondAttribute="top" constant="33" id="dbB-Ra-txw"/>
                     <constraint firstItem="fcg-gt-TOK" firstAttribute="top" secondItem="28O-zD-Rho" secondAttribute="bottom" constant="8" symbolic="YES" id="eBS-Y1-xxG"/>
                     <constraint firstItem="G69-3z-dxp" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="9" id="eLz-TS-d5w"/>
                     <constraint firstItem="G69-3z-dxp" firstAttribute="leading" secondItem="28O-zD-Rho" secondAttribute="leading" id="hfs-Jc-uPS"/>
-                    <constraint firstItem="nXh-8y-Jrc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="mHE-CP-0Qu"/>
-                    <constraint firstItem="nXh-8y-Jrc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nf3-fJ-jXE"/>
                     <constraint firstItem="28O-zD-Rho" firstAttribute="trailing" secondItem="fcg-gt-TOK" secondAttribute="trailing" id="so7-Ni-3t4"/>
                     <constraint firstItem="7YC-Rb-2c1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-11" id="tTe-Gm-rb8"/>
-                    <constraint firstItem="lf5-a2-Zrc" firstAttribute="top" secondItem="7YC-Rb-2c1" secondAttribute="bottom" constant="45" id="uxP-NV-0aY"/>
-                    <constraint firstAttribute="bottom" secondItem="nXh-8y-Jrc" secondAttribute="bottom" constant="-0.5" id="v1X-S6-hWM"/>
+                    <constraint firstItem="lf5-a2-Zrc" firstAttribute="top" secondItem="7YC-Rb-2c1" secondAttribute="bottom" constant="12" id="uxP-NV-0aY"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="companyLogoImageView" destination="7YC-Rb-2c1" id="JdE-U2-dVe"/>
+                <outlet property="companyNameLbl" destination="28O-zD-Rho" id="dF2-Yf-iWu"/>
                 <outlet property="jobTitleLbl" destination="G69-3z-dxp" id="MWB-Xk-npW"/>
+                <outlet property="locationLbl" destination="fcg-gt-TOK" id="1FG-FV-ALY"/>
+                <outlet property="postdateLbl" destination="lf5-a2-Zrc" id="JAX-iD-rTa"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="203.29835082458771"/>
         </tableViewCell>
