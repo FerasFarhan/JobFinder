@@ -18,5 +18,17 @@ let API_ERROR_CODE     = 30003
 let CUSTOM_ERROR_CODE  = 30004
 
 // MARK: API CONFIGURATION
-let API_URL_GITHUB = "https://jobs.github.com/positions.json"
-let API_URL_SEARCH_GOV = "https://jobs.search.gov/jobs/search.json"
+public func API_URL_GITHUB(query:String, lat:Double, lon:Double) -> String {
+    let query = query.replacingOccurrences(of: " ", with: "+")
+    return "https://jobs.github.com/positions.json?search=\(query)&lat=\(lat)&long=\(lon)"
+}
+
+public func API_URL_SEARCH_GOV(query:String, lat:Double, lon:Double) -> String {
+    let lat_lon = "\(lat),\(lon)"
+    let query = query.replacingOccurrences(of: " ", with: "+")
+    return "https://jobs.search.gov/jobs/search.json?query=\(query)&lat_lon=\(lat_lon)"
+}
+
+
+
+

@@ -13,9 +13,9 @@ typealias TBGeneralBusinessManagerCompletionHandler = (NSError?, String?, NSArra
 class TBMainBusinessManager {
 
     // MARK: /jobs.github.com/positions.json API
-    func getGithubJobs (completionHandler:@escaping TBGeneralBusinessManagerCompletionHandler) {
+    func getGithubJobs (query:String, lat:Double, lon:Double, completionHandler:@escaping TBGeneralBusinessManagerCompletionHandler) {
 
-        let url = API_URL_GITHUB
+        let url = API_URL_GITHUB(query: query, lat: lat, lon: lon)
 
         TBLogManager.printURL(url as AnyObject?, senderClass: self.self)
 
@@ -40,9 +40,9 @@ class TBMainBusinessManager {
     }
 
     // MARK: /jobs.search.gov/jobs/search.json API
-    func getSearchGovJobs (completionHandler:@escaping TBGeneralBusinessManagerCompletionHandler) {
+    func getSearchGovJobs (query:String, lat:Double, lon:Double, completionHandler:@escaping TBGeneralBusinessManagerCompletionHandler) {
 
-        let url = API_URL_SEARCH_GOV
+        let url = API_URL_SEARCH_GOV(query: query, lat: lat, lon: lon)
 
         TBLogManager.printURL(url as AnyObject?, senderClass: self.self)
 

@@ -81,85 +81,11 @@
                                 <rect key="frame" x="0.0" y="7" width="414" height="925"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx7-Wp-dzS">
-                                <rect key="frame" x="0.0" y="259" width="414" height="189"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company Name" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-kb-ui7">
-                                        <rect key="frame" x="32" y="27" width="350" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="qsj-9L-7cU"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.1529411765" green="0.31764705879999999" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Job Title" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AjJ-yn-sWW">
-                                        <rect key="frame" x="32" y="75" width="350" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.1529411765" green="0.31764705879999999" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-dq-mpn">
-                                        <rect key="frame" x="32" y="123" width="350" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.1529411765" green="0.31764705879999999" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="trailing" secondItem="RV1-dq-mpn" secondAttribute="trailing" id="4j5-RS-hDf"/>
-                                    <constraint firstAttribute="trailing" secondItem="G3O-kb-ui7" secondAttribute="trailing" constant="32" id="52u-sg-NUH"/>
-                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="RV1-dq-mpn" secondAttribute="leading" id="AwZ-3V-mcW"/>
-                                    <constraint firstItem="RV1-dq-mpn" firstAttribute="top" secondItem="AjJ-yn-sWW" secondAttribute="bottom" constant="8" symbolic="YES" id="Fm0-Gm-VfO"/>
-                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="Qx7-Wp-dzS" secondAttribute="leading" constant="32" id="L2L-2g-exT"/>
-                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="trailing" secondItem="AjJ-yn-sWW" secondAttribute="trailing" id="bU9-oh-fI7"/>
-                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="AjJ-yn-sWW" secondAttribute="leading" id="cc2-BC-dcs"/>
-                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="top" secondItem="Qx7-Wp-dzS" secondAttribute="top" constant="27" id="edm-O1-Om9"/>
-                                    <constraint firstItem="G3O-kb-ui7" firstAttribute="height" secondItem="AjJ-yn-sWW" secondAttribute="height" id="gYi-DT-PWs"/>
-                                    <constraint firstItem="AjJ-yn-sWW" firstAttribute="height" secondItem="RV1-dq-mpn" secondAttribute="height" id="pkc-f2-9IH"/>
-                                    <constraint firstItem="AjJ-yn-sWW" firstAttribute="top" secondItem="G3O-kb-ui7" secondAttribute="bottom" constant="8" symbolic="YES" id="wqQ-Hl-EQx"/>
-                                    <constraint firstAttribute="height" constant="189" id="yPe-Mt-vjE"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND JOBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="w04-CP-kfO">
-                                <rect key="frame" x="0.0" y="108" width="414" height="171"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="qs0-rz-AdK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -179,30 +105,100 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="findJobsButtonPressed" destination="v65-Ql-4Zc" eventType="touchUpInside" id="803-m3-8tM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-kb-ui7">
+                                <rect key="frame" x="32" y="211" width="350" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qsj-9L-7cU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Job Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AjJ-yn-sWW">
+                                <rect key="frame" x="32" y="259" width="350" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-dq-mpn">
+                                <rect key="frame" x="32" y="307" width="350" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-ap-Ypg">
+                                <rect key="frame" x="32" y="307" width="350" height="40"/>
+                                <connections>
+                                    <action selector="locationButtonPressed" destination="v65-Ql-4Zc" eventType="touchUpInside" id="ggr-wr-QoP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="w04-CP-kfO" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="639-qF-LDm"/>
+                            <constraint firstItem="uUp-ap-Ypg" firstAttribute="width" secondItem="RV1-dq-mpn" secondAttribute="width" id="9mf-dV-nqL"/>
+                            <constraint firstItem="G3O-kb-ui7" firstAttribute="top" secondItem="oaM-4P-3h6" secondAttribute="top" constant="211" id="AxZ-Po-d3r"/>
                             <constraint firstItem="w04-CP-kfO" firstAttribute="width" secondItem="oaM-4P-3h6" secondAttribute="width" id="EBI-Qi-Fdp"/>
+                            <constraint firstItem="RV1-dq-mpn" firstAttribute="top" secondItem="AjJ-yn-sWW" secondAttribute="bottom" constant="8" symbolic="YES" id="F7A-3v-aCh"/>
                             <constraint firstItem="H6P-2d-axn" firstAttribute="height" secondItem="oaM-4P-3h6" secondAttribute="height" constant="29" id="FnN-sb-u12"/>
                             <constraint firstItem="69p-Td-wBZ" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="Ir6-RR-QNz"/>
                             <constraint firstItem="69p-Td-wBZ" firstAttribute="leading" secondItem="Oyx-Rp-SAF" secondAttribute="leading" constant="75" id="K8z-78-H8L"/>
+                            <constraint firstItem="G3O-kb-ui7" firstAttribute="height" secondItem="AjJ-yn-sWW" secondAttribute="height" id="L6N-dk-tVf"/>
                             <constraint firstItem="H6P-2d-axn" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="LYK-tU-pys"/>
                             <constraint firstItem="H6P-2d-axn" firstAttribute="width" secondItem="oaM-4P-3h6" secondAttribute="width" id="LaT-oI-6nN"/>
+                            <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="AjJ-yn-sWW" secondAttribute="leading" id="MLn-dB-xdB"/>
                             <constraint firstItem="w04-CP-kfO" firstAttribute="top" secondItem="Oyx-Rp-SAF" secondAttribute="top" constant="20" id="PGQ-aJ-avM"/>
-                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="top" secondItem="w04-CP-kfO" secondAttribute="bottom" constant="-20" id="QVR-DC-PjL"/>
+                            <constraint firstItem="G3O-kb-ui7" firstAttribute="trailing" secondItem="RV1-dq-mpn" secondAttribute="trailing" id="TdS-eF-gKb"/>
                             <constraint firstItem="H6P-2d-axn" firstAttribute="centerY" secondItem="Oyx-Rp-SAF" secondAttribute="centerY" constant="-5.5" id="U3p-pa-Dq4"/>
-                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="leading" secondItem="Oyx-Rp-SAF" secondAttribute="leading" id="UuW-ej-FJP"/>
-                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="VvE-jg-SI3"/>
-                            <constraint firstItem="Qx7-Wp-dzS" firstAttribute="centerY" secondItem="Oyx-Rp-SAF" secondAttribute="centerY" constant="-121.5" id="bcq-pY-epO"/>
+                            <constraint firstAttribute="trailing" secondItem="G3O-kb-ui7" secondAttribute="trailing" constant="32" id="ZWC-SX-gEi"/>
+                            <constraint firstItem="uUp-ap-Ypg" firstAttribute="height" secondItem="RV1-dq-mpn" secondAttribute="height" id="Zdq-sz-D4k"/>
+                            <constraint firstItem="uUp-ap-Ypg" firstAttribute="centerX" secondItem="RV1-dq-mpn" secondAttribute="centerX" id="d8z-uA-HfW"/>
                             <constraint firstItem="Oyx-Rp-SAF" firstAttribute="bottom" secondItem="69p-Td-wBZ" secondAttribute="bottom" constant="15" id="dYM-Qw-gx3"/>
-                            <constraint firstItem="Oyx-Rp-SAF" firstAttribute="trailing" secondItem="Qx7-Wp-dzS" secondAttribute="trailing" id="vXw-Sp-Y3M"/>
+                            <constraint firstItem="G3O-kb-ui7" firstAttribute="trailing" secondItem="AjJ-yn-sWW" secondAttribute="trailing" id="eXF-Xf-5QN"/>
+                            <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="oaM-4P-3h6" secondAttribute="leading" constant="32" id="ebb-BY-cM9"/>
+                            <constraint firstItem="AjJ-yn-sWW" firstAttribute="top" secondItem="G3O-kb-ui7" secondAttribute="bottom" constant="8" symbolic="YES" id="fuq-kD-eTT"/>
+                            <constraint firstItem="AjJ-yn-sWW" firstAttribute="height" secondItem="RV1-dq-mpn" secondAttribute="height" id="kVb-8B-gEF"/>
+                            <constraint firstItem="uUp-ap-Ypg" firstAttribute="centerY" secondItem="RV1-dq-mpn" secondAttribute="centerY" id="raN-tS-Eap"/>
+                            <constraint firstItem="RV1-dq-mpn" firstAttribute="width" secondItem="AjJ-yn-sWW" secondAttribute="width" id="z0s-5S-eFy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oyx-Rp-SAF"/>
                     </view>
                     <connections>
-                        <segue destination="v3G-PB-Q1Q" kind="show" id="1GD-Ly-oqu"/>
+                        <outlet property="companyNameTextField" destination="G3O-kb-ui7" id="lJo-qX-W9W"/>
+                        <outlet property="jobTitleTextField" destination="AjJ-yn-sWW" id="VCs-XP-4kW"/>
+                        <outlet property="locationTextField" destination="RV1-dq-mpn" id="fIS-5A-cP7"/>
+                        <segue destination="v3G-PB-Q1Q" kind="show" identifier="goToJobsView" id="1GD-Ly-oqu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooA-2D-lkk" userLabel="First Responder" sceneMemberID="firstResponder"/>

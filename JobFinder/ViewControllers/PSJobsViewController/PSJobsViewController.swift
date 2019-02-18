@@ -19,16 +19,24 @@ class PSJobsViewController: UIViewController {
     var gitHubJobsArray = [PSGitHubJobObject]()
     var searchGovArray = [PSSearchGovObject]()
 
+    var query = ""
+    var lat:Double = 0
+    var lon:Double = 0
+
     override func viewDidLoad() {
-        self.title = "Jobs Results"
+        self.title = "Jobs Search Results"
         super.viewDidLoad()
-        self.initView()
         self.customizeActivityIndicatorView()
         self.getGithubJobs()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.initView()
+    }
+
     func initView() {
-        self.navigationItem.hidesBackButton = true
+        self.navigationItem.hidesBackButton = false
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
@@ -45,7 +53,7 @@ class PSJobsViewController: UIViewController {
         self.listTableView.isHidden = true
         self.noDataLable.isHidden = true
 
-        TBMainBusinessManager().getGithubJobs { (error, message, resultArray) in
+        TBMainBusinessManager().getGithubJobs(query: self.query, lat: self.lat, lon: self.lon) { (error, message, resultArray) in
 
             if !Reachability.isConnectedToNetwork() {
                 self.noDataLable.text = "Please check your internet connection"
@@ -67,7 +75,7 @@ class PSJobsViewController: UIViewController {
 
     func getSearchGovJobs() {
 
-        TBMainBusinessManager().getSearchGovJobs { (error, message, resultArray) in
+        TBMainBusinessManager().getSearchGovJobs(query: self.query, lat: self.lat, lon: self.lon) { (error, message, resultArray) in
 
             if !Reachability.isConnectedToNetwork() {
                 self.noDataLable.text = "Please check your internet connection"
@@ -87,6 +95,15 @@ class PSJobsViewController: UIViewController {
                     self.listTableView.isHidden = false
                     self.noDataLable.isHidden = true
                     self.listTableView.reloadData()
+
+                    let jobCount = self.searchGovArray.count + self.searchGovArray.count
+
+                    if jobCount > 1 {
+                        self.title = "\(jobCount) Jobs Found"
+                    }
+                    else {
+                        self.title = "\(jobCount) Job Found"
+                    }
                 }
                 else {
                     self.noDataLable.text = "No Available Data"
@@ -102,13 +119,14 @@ class PSJobsViewController: UIViewController {
 extension PSJobsViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
         let lable = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
 
         if section == 0 {
-            lable.text = "  GitHub Jobs"
+            lable.text = "GitHub Jobs"
         }
         else {
-            lable.text = "  Search Gov Jobs"
+            lable.text = "Search Gov Jobs"
         }
 
         lable.backgroundColor = .gray
