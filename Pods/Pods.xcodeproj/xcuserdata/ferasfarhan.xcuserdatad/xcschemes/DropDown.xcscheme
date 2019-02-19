@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79895BF16A97F325CD23668083DD37EE"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "5168099F2EBFC99A707C03C9EADE01A5"
+               BlueprintName = "DropDown"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "DropDown.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -109,7 +109,7 @@
                                     <action selector="findJobsButtonPressed" destination="v65-Ql-4Zc" eventType="touchUpInside" id="803-m3-8tM"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-kb-ui7">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Provider" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-kb-ui7">
                                 <rect key="frame" x="32" y="211" width="350" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -157,15 +157,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-ap-Ypg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-ap-Ypg" userLabel="Location button">
                                 <rect key="frame" x="32" y="307" width="350" height="40"/>
                                 <connections>
                                     <action selector="locationButtonPressed" destination="v65-Ql-4Zc" eventType="touchUpInside" id="ggr-wr-QoP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8N-Vx-2DM">
+                                <rect key="frame" x="32" y="211" width="350" height="40"/>
+                                <connections>
+                                    <action selector="providerButtonPressed" destination="v65-Ql-4Zc" eventType="touchUpInside" id="6SH-ol-lEQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="U8N-Vx-2DM" firstAttribute="width" secondItem="G3O-kb-ui7" secondAttribute="width" id="1HQ-gi-VbP"/>
                             <constraint firstItem="w04-CP-kfO" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="639-qF-LDm"/>
                             <constraint firstItem="uUp-ap-Ypg" firstAttribute="width" secondItem="RV1-dq-mpn" secondAttribute="width" id="9mf-dV-nqL"/>
                             <constraint firstItem="G3O-kb-ui7" firstAttribute="top" secondItem="oaM-4P-3h6" secondAttribute="top" constant="211" id="AxZ-Po-d3r"/>
@@ -178,6 +185,7 @@
                             <constraint firstItem="H6P-2d-axn" firstAttribute="centerX" secondItem="Oyx-Rp-SAF" secondAttribute="centerX" id="LYK-tU-pys"/>
                             <constraint firstItem="H6P-2d-axn" firstAttribute="width" secondItem="oaM-4P-3h6" secondAttribute="width" id="LaT-oI-6nN"/>
                             <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="AjJ-yn-sWW" secondAttribute="leading" id="MLn-dB-xdB"/>
+                            <constraint firstItem="U8N-Vx-2DM" firstAttribute="height" secondItem="G3O-kb-ui7" secondAttribute="height" id="Nz7-94-xJX"/>
                             <constraint firstItem="w04-CP-kfO" firstAttribute="top" secondItem="Oyx-Rp-SAF" secondAttribute="top" constant="20" id="PGQ-aJ-avM"/>
                             <constraint firstItem="G3O-kb-ui7" firstAttribute="trailing" secondItem="RV1-dq-mpn" secondAttribute="trailing" id="TdS-eF-gKb"/>
                             <constraint firstItem="H6P-2d-axn" firstAttribute="centerY" secondItem="Oyx-Rp-SAF" secondAttribute="centerY" constant="-5.5" id="U3p-pa-Dq4"/>
@@ -189,16 +197,19 @@
                             <constraint firstItem="G3O-kb-ui7" firstAttribute="leading" secondItem="oaM-4P-3h6" secondAttribute="leading" constant="32" id="ebb-BY-cM9"/>
                             <constraint firstItem="AjJ-yn-sWW" firstAttribute="top" secondItem="G3O-kb-ui7" secondAttribute="bottom" constant="8" symbolic="YES" id="fuq-kD-eTT"/>
                             <constraint firstItem="AjJ-yn-sWW" firstAttribute="height" secondItem="RV1-dq-mpn" secondAttribute="height" id="kVb-8B-gEF"/>
+                            <constraint firstItem="U8N-Vx-2DM" firstAttribute="centerX" secondItem="G3O-kb-ui7" secondAttribute="centerX" id="kgj-p5-3tA"/>
                             <constraint firstItem="uUp-ap-Ypg" firstAttribute="centerY" secondItem="RV1-dq-mpn" secondAttribute="centerY" id="raN-tS-Eap"/>
+                            <constraint firstItem="U8N-Vx-2DM" firstAttribute="centerY" secondItem="G3O-kb-ui7" secondAttribute="centerY" id="wp9-ld-BRZ"/>
                             <constraint firstItem="RV1-dq-mpn" firstAttribute="width" secondItem="AjJ-yn-sWW" secondAttribute="width" id="z0s-5S-eFy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oyx-Rp-SAF"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="companyNameTextField" destination="G3O-kb-ui7" id="lJo-qX-W9W"/>
                         <outlet property="jobTitleTextField" destination="AjJ-yn-sWW" id="VCs-XP-4kW"/>
                         <outlet property="locationTextField" destination="RV1-dq-mpn" id="fIS-5A-cP7"/>
+                        <outlet property="providerButton" destination="U8N-Vx-2DM" id="QGR-g5-D4V"/>
+                        <outlet property="providerTextField" destination="G3O-kb-ui7" id="RgJ-jH-jLF"/>
                         <segue destination="v3G-PB-Q1Q" kind="show" identifier="goToJobsView" id="1GD-Ly-oqu"/>
                     </connections>
                 </viewController>

@@ -10,33 +10,80 @@ import UIKit
 import GooglePlaces
 import GooglePlacePicker
 import CoreLocation
+import DropDown
 
 class PSJobsFiltersViewController: UIViewController {
 
-    @IBOutlet weak var companyNameTextField: UITextField!
+    // IBOutlets
+    @IBOutlet weak var providerTextField: UITextField!
+    @IBOutlet weak var providerButton: UIButton!
     @IBOutlet weak var jobTitleTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
 
+    // google places object, defalut is nil
     var selectedPlace:GMSPlace!
 
+    // CLLocationManager to get location to be used in google places
     var locationManager = CLLocationManager()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    // DropDown view
+    let dropDown = DropDown()
+
+    // Provider filter flags
+    var isGithubOnly = false
+    var isSearchGovOnly = false
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+        // called here to hide the nav bar for each viewWillAppear
         self.initView()
+
+        // get location to be used in google places
         self.getLocation()
     }
-    
+
+    // self.view customizations
     func initView() {
         self.title = "Find Jobs"
         self.navigationItem.hidesBackButton = true
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+
+        // Drop Down View customizations
+        self.setupDropDownView()
     }
 
+    // Drop Down View customizations
+    func setupDropDownView() {
+        // The view to which the drop down will appear on
+        dropDown.anchorView = self.providerButton // Provider Button
+
+        // The list of items to display. Can be changed dynamically
+        dropDown.dataSource = ["All Providers", "GitHub Jobs", "Gov Jobs"]
+
+        // Action triggered on selection
+        dropDown.selectionAction = { (index: Int, item: String) in
+
+            self.providerTextField.text = item
+
+            if index == 0 { // All Providers selected
+                self.isGithubOnly = false
+                self.isSearchGovOnly = false
+            }
+            else if index == 1 { // GitHub Jobs selected
+                self.isGithubOnly = true
+                self.isSearchGovOnly = false
+            } // Gov Jobs selected
+            else{
+                self.isGithubOnly = false
+                self.isSearchGovOnly = true
+            }
+
+            self.dropDown.hide()
+        }
+    }
+
+    // location manager initialization and requesting the locaiton from user
     func getLocation() {
 
         self.locationManager = CLLocationManager()
@@ -62,31 +109,27 @@ class PSJobsFiltersViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier == "goToJobsView", let destination = segue.destination as? PSJobsViewController {
+
+            // set selected place if available
             if let place = self.selectedPlace {
                 destination.lat = place.coordinate.latitude
                 destination.lon = place.coordinate.longitude
             }
 
-            var query = ""
-
-            if let company = self.companyNameTextField.text {
-                query = company
+            // set position title if available
+            if let query = self.jobTitleTextField.text {
+                destination.query = query
             }
 
-            if let jobTitle = self.jobTitleTextField.text {
-                if query.count > 0 {
-                    query = query + "+" + jobTitle
-                }
-                else {
-                    query = jobTitle
-                }
-            }
+            // set isGithubOnly flag default is false
+            destination.isGithubOnly = self.isGithubOnly
 
-            destination.query = query
+            // set isSearchGovOnly flag default is false
+            destination.isSearchGovOnly = self.isSearchGovOnly
         }
     }
 
-
+    // show Google Places Picker
     @IBAction func locationButtonPressed() {
         self.view.endEditing(true)
         let config = GMSPlacePickerConfig (viewport: nil)
@@ -95,6 +138,13 @@ class PSJobsFiltersViewController: UIViewController {
         self.present (placePicker, animated: true, completion: nil)
     }
 
+    // show drop down
+    @IBAction func providerButtonPressed() {
+        self.view.endEditing(true)
+        self.dropDown.show()
+    }
+
+    // move to jobs view controller, all filters are optional
     @IBAction func findJobsButtonPressed() {
         self.performSegue(withIdentifier: "goToJobsView", sender: nil)
     }
@@ -115,6 +165,7 @@ extension PSJobsFiltersViewController: GMSPlacePickerViewControllerDelegate {
         self.locationTextField.text = self.selectedPlace.name
     }
 
+    // do nothing
     func placePickerDidCancel(_ viewController: GMSPlacePickerViewController) {
         // Dismiss the place picker, as it cannot dismiss itself.
         viewController.dismiss(animated: true, completion: nil)

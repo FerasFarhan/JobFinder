@@ -7,6 +7,12 @@
 //  Copyright © 2019 Techband. All rights reserved.
 //
 
+/*
+ This manager contains handlers for all api call across the app level using Alamofire
+
+ https://github.com/Alamofire/Alamofire
+ */
+
 import UIKit
 import Alamofire
 
@@ -35,6 +41,10 @@ class TBConnectionManager: NSObject {
             startPOST()
         }
     }
+
+    /*
+     GET api call across the app level
+     */
 
     fileprivate func startGET(){
 
@@ -84,7 +94,11 @@ class TBConnectionManager: NSObject {
         }
     }
 
-    fileprivate func startPOST(){
+    /*
+     POST api call
+     */
+    fileprivate func startPOST() {
+        
         let manager = Alamofire.SessionManager.default
 
         manager.request(self.url,
@@ -131,29 +145,4 @@ class TBConnectionManager: NSObject {
                 }
         }
     }
-
-    // MARK: Stop All Requests
-    func stopAllRequests (_ resultHandler:@escaping TBConnectionManagerCompletionHandler){
-        Alamofire.SessionManager.default.session.getAllTasks { tasks in
-            tasks.forEach {
-                $0.cancel()
-            }
-
-            resultHandler(nil, "success", [])
-        }
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

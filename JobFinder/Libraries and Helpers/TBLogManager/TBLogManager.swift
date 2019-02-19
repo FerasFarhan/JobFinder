@@ -6,7 +6,14 @@
 //  Copyright © 2019 Techband. All rights reserved.
 //
 
+/*
+ This class is a helper to enable and disable logs for the app level
+ */
+
 import UIKit
+
+// MARK: LOG CONFIGURATION
+let ENABLE_DEBUG_MODE = true
 
 class TBLogManager: NSObject {
     

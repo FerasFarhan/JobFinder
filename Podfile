@@ -16,4 +16,6 @@ target 'JobFinder' do
     pod 'GooglePlacePicker'
     pod 'GoogleMaps'
 
+    pod 'DropDown'
+
 end

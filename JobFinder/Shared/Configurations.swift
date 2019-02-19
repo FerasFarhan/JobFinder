@@ -8,7 +8,5 @@
 
 import Foundation
 
-// MARK: LOG CONFIGURATION
-let ENABLE_DEBUG_MODE = true
-
+// MARK: GOOGLE key that used to activate google places ios sdk
 let GOOGLE_API_KEY = "AIzaSyD0iQLeh6qlX2ojwbfyXZbd20GfQIo--w0"
