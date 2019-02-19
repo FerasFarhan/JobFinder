@@ -79,6 +79,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		513DD70E221C1F7400FF3807 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51B8C6C6221972CE00064EB4 /* LaunchScreen.storyboard */,
+				51B8C6C1221972CD00064EB4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		51B8C6B1221972CD00064EB4 = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +109,11 @@
 		51B8C6BC221972CD00064EB4 /* JobFinder */ = {
 			isa = PBXGroup;
 			children = (
+				513DD70E221C1F7400FF3807 /* View */,
 				51B8C6CF221979D100064EB4 /* Shared */,
 				51B8C6D0221979E400064EB4 /* Libraries and Helpers */,
-				51B8C6D122197A0300064EB4 /* Managers */,
-				51B8C6D222197A0D00064EB4 /* ViewControllers */,
+				51B8C6D122197A0300064EB4 /* Model */,
+				51B8C6D222197A0D00064EB4 /* ViewModels */,
 				51B8C6D322197A1600064EB4 /* SupportingFiles */,
 			);
 			path = JobFinder;
@@ -129,24 +139,24 @@
 			path = "Libraries and Helpers";
 			sourceTree = "<group>";
 		};
-		51B8C6D122197A0300064EB4 /* Managers */ = {
+		51B8C6D122197A0300064EB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				51B8C6DD22197AFF00064EB4 /* Models */,
 				51B8C6DE22197B1E00064EB4 /* TBConnectionManager */,
 				51B8C6DB22197AFE00064EB4 /* TBBusinessManagers */,
 			);
-			path = Managers;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		51B8C6D222197A0D00064EB4 /* ViewControllers */ = {
+		51B8C6D222197A0D00064EB4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				51FEEABF221ACAF200FE75DC /* PSJobsFiltersViewController */,
 				51B8C6E922197DF300064EB4 /* PSJobsViewController */,
 				51B8C6E722197D0600064EB4 /* PSSplashViewController */,
 			);
-			path = ViewControllers;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		51B8C6D322197A1600064EB4 /* SupportingFiles */ = {
@@ -154,9 +164,7 @@
 			children = (
 				51B8C6E522197B9100064EB4 /* Default-568h@2x.png */,
 				51B8C6BD221972CD00064EB4 /* AppDelegate.swift */,
-				51B8C6C1221972CD00064EB4 /* Main.storyboard */,
 				51B8C6C4221972CE00064EB4 /* Assets.xcassets */,
-				51B8C6C6221972CE00064EB4 /* LaunchScreen.storyboard */,
 				51B8C6C9221972CE00064EB4 /* Info.plist */,
 			);
 			path = SupportingFiles;
