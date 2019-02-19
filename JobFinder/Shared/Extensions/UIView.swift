@@ -1,9 +1,9 @@
 //
 //  UIView.swift
-//  Meeza
+//  JobFinder
 //
 //  Created by Feras Farhan on 07/10/19.
-//  Copyright © 2019 Techband. All rights reserved.
+//  Copyright © 2019 ProgressSoft. All rights reserved.
 //
 
 import Foundation

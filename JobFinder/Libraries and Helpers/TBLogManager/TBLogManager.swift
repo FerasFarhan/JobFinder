@@ -1,9 +1,9 @@
 //
 //  TBLogManager.swift
-//  Techband
+//  JobFinder
 //
 //  Created by Feras Farhan on 3/28/19.
-//  Copyright © 2019 Techband. All rights reserved.
+//  Copyright © 2019 ProgressSoft. All rights reserved.
 //
 
 /*

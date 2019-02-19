@@ -112,7 +112,7 @@
 		51B8C6CF221979D100064EB4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				51FEEAC2221ACEE800FE75DC /* New Group */,
+				51FEEAC2221ACEE800FE75DC /* Extensions */,
 				51B8C6D422197A7700064EB4 /* Apis.swift */,
 				51B8C6D622197A8100064EB4 /* Configurations.swift */,
 			);
@@ -245,12 +245,12 @@
 			path = PSJobsFiltersViewController;
 			sourceTree = "<group>";
 		};
-		51FEEAC2221ACEE800FE75DC /* New Group */ = {
+		51FEEAC2221ACEE800FE75DC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				51FEEAC3221ACEF200FE75DC /* UIView.swift */,
 			);
-			path = "New Group";
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E540995CC0B34334E23CCA48 /* Frameworks */ = {
