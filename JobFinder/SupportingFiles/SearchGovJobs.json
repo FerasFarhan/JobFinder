@@ -1,0 +1,150 @@
+[
+    {
+        "id": "usajobs:515658500",
+        "position_title": "Registered Nurse INTENSIVE CARE UNIT",
+        "organization_name": "Veterans Affairs, Veterans Health Administration",
+        "rate_interval_code": "PA",
+        "minimum": 44276,
+        "maximum": 99776,
+        "start_date": "2018-10-31",
+        "end_date": "2019-09-30",
+        "locations": [
+            "Muskogee, OK"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515658500"
+    },
+    {
+        "id": "usajobs:515643800",
+        "position_title": "Orthopedic Surgeon",
+        "organization_name": "Veterans Affairs, Veterans Health Administration",
+        "rate_interval_code": "PA",
+        "minimum": 103395,
+        "maximum": 400000,
+        "start_date": "2018-10-31",
+        "end_date": "2019-09-30",
+        "locations": [
+            "Amarillo, TX"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515643800"
+    },
+    {
+        "id": "usajobs:515586400",
+        "position_title": "Registered Nurse (Intermittent)",
+        "organization_name": "Veterans Affairs, Veterans Health Administration",
+        "rate_interval_code": "PA",
+        "minimum": 56078,
+        "maximum": 103846,
+        "start_date": "2018-10-30",
+        "end_date": "2019-05-30",
+        "locations": [
+            "Hobbs, NM",
+            "Abilene, TX",
+            "Big Spring, TX",
+            "Odessa, TX",
+            "San Angelo, TX"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515586400"
+    },
+    {
+        "id": "usajobs:515571100",
+        "position_title": "Accounting - Direct Hiring Authority",
+        "organization_name": "Air Force Materiel Command",
+        "rate_interval_code": "PA",
+        "minimum": 21672,
+        "maximum": 157663,
+        "start_date": "2018-11-10",
+        "end_date": "2019-11-09",
+        "locations": [
+            "Davis Monthan AFB, AZ",
+            "Edwards AFB, CA",
+            "Arnold AFB, TN"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515571100"
+    },
+    {
+        "id": "usajobs:515570600",
+        "position_title": "Physician-Ophthalmologist",
+        "organization_name": "Veterans Affairs, Veterans Health Administration",
+        "rate_interval_code": "PA",
+        "minimum": 103395,
+        "maximum": 400000,
+        "start_date": "2018-10-31",
+        "end_date": "2019-10-30",
+        "locations": [
+            "Little Rock, AR"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515570600"
+    },
+    {
+        "id": "usajobs:515564400",
+        "position_title": "Physician - Chief of Anesthesiology",
+        "organization_name": "Veterans Affairs, Veterans Health Administration",
+        "rate_interval_code": "PA",
+        "minimum": 125000,
+        "maximum": 400000,
+        "start_date": "2018-10-31",
+        "end_date": "2019-10-30",
+        "locations": [
+            "Little Rock, AR"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515564400"
+    },
+    {
+        "id": "usajobs:515563700",
+        "position_title": "Accounting - Direct Hiring Authority",
+        "organization_name": "Air Force Materiel Command",
+        "rate_interval_code": "PA",
+        "minimum": 21672,
+        "maximum": 157663,
+        "start_date": "2018-11-10",
+        "end_date": "2019-11-09",
+        "locations": [
+            "Eglin AFB, FL"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515563700"
+    },
+    {
+        "id": "usajobs:515554300",
+        "position_title": "Financial Management - Direct Hiring Authority",
+        "organization_name": "Air Force Materiel Command",
+        "rate_interval_code": "PA",
+        "minimum": 21672,
+        "maximum": 157663,
+        "start_date": "2018-11-10",
+        "end_date": "2019-11-09",
+        "locations": [
+            "Edwards AFB, CA",
+            "Eglin AFB, FL",
+            "Arnold AFB, TN"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515554300"
+    },
+    {
+        "id": "usajobs:515554200",
+        "position_title": "Staff Nurse (Community Living Center)",
+        "organization_name": "Veterans Affairs, Veterans Health Administration",
+        "rate_interval_code": "PA",
+        "minimum": 52635,
+        "maximum": 112542,
+        "start_date": "2018-10-31",
+        "end_date": "2019-09-30",
+        "locations": [
+            "Dayton, OH"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515554200"
+    },
+    {
+        "id": "usajobs:515552100",
+        "position_title": "Financial Management - Direct Hiring Authority",
+        "organization_name": "Air Force Materiel Command",
+        "rate_interval_code": "PA",
+        "minimum": 21672,
+        "maximum": 157663,
+        "start_date": "2018-11-10",
+        "end_date": "2019-11-09",
+        "locations": [
+            "Nellis AFB, NV"
+        ],
+        "url": "https://www.usajobs.gov/GetJob/ViewDetails/515552100"
+    }
+]

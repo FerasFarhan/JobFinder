@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513DD716221C211100FF3807 /* JobFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD715221C211100FF3807 /* JobFinderTests.swift */; };
+		513DD71F221C268000FF3807 /* PSUnitTestGithubJobsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD71E221C268000FF3807 /* PSUnitTestGithubJobsApi.swift */; };
+		513DD721221C272800FF3807 /* GitHubJobs.json in Resources */ = {isa = PBXBuildFile; fileRef = 513DD720221C272800FF3807 /* GitHubJobs.json */; };
+		513DD724221C2AB800FF3807 /* GitHubJobs.json in Resources */ = {isa = PBXBuildFile; fileRef = 513DD720221C272800FF3807 /* GitHubJobs.json */; };
+		513DD726221C2B2E00FF3807 /* PSUnitTestSearchGovJobsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DD725221C2B2E00FF3807 /* PSUnitTestSearchGovJobsApi.swift */; };
+		513DD728221C2B5400FF3807 /* SearchGovJobs.json in Resources */ = {isa = PBXBuildFile; fileRef = 513DD727221C2B5400FF3807 /* SearchGovJobs.json */; };
+		513DD729221C2B5600FF3807 /* SearchGovJobs.json in Resources */ = {isa = PBXBuildFile; fileRef = 513DD727221C2B5400FF3807 /* SearchGovJobs.json */; };
 		51B8C6BE221972CD00064EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6BD221972CD00064EB4 /* AppDelegate.swift */; };
 		51B8C6C0221972CD00064EB4 /* PSSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8C6BF221972CD00064EB4 /* PSSplashViewController.swift */; };
 		51B8C6C3221972CD00064EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B8C6C1221972CD00064EB4 /* Main.storyboard */; };
@@ -30,8 +37,25 @@
 		7DD6146BFD2F63FD17B4A3C6 /* Pods_JobFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B01C18EF9BD072274AAF454 /* Pods_JobFinder.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		513DD718221C211100FF3807 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B8C6B2221972CD00064EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51B8C6B9221972CD00064EB4;
+			remoteInfo = JobFinder;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4799F90A84E648BD853916E0 /* Pods-JobFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-JobFinder/Pods-JobFinder.release.xcconfig"; sourceTree = "<group>"; };
+		513DD713221C211100FF3807 /* JobFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		513DD715221C211100FF3807 /* JobFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFinderTests.swift; sourceTree = "<group>"; };
+		513DD717221C211100FF3807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		513DD71E221C268000FF3807 /* PSUnitTestGithubJobsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUnitTestGithubJobsApi.swift; sourceTree = "<group>"; };
+		513DD720221C272800FF3807 /* GitHubJobs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GitHubJobs.json; sourceTree = "<group>"; };
+		513DD725221C2B2E00FF3807 /* PSUnitTestSearchGovJobsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUnitTestSearchGovJobsApi.swift; sourceTree = "<group>"; };
+		513DD727221C2B5400FF3807 /* SearchGovJobs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchGovJobs.json; sourceTree = "<group>"; };
 		51B8C6BA221972CD00064EB4 /* JobFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B8C6BD221972CD00064EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B8C6BF221972CD00064EB4 /* PSSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSplashViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		513DD710221C211100FF3807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51B8C6B7221972CD00064EB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,10 +119,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		513DD714221C211100FF3807 /* JobFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				513DD71D221C263B00FF3807 /* Unit Test Model */,
+				513DD715221C211100FF3807 /* JobFinderTests.swift */,
+				513DD717221C211100FF3807 /* Info.plist */,
+			);
+			path = JobFinderTests;
+			sourceTree = "<group>";
+		};
+		513DD71D221C263B00FF3807 /* Unit Test Model */ = {
+			isa = PBXGroup;
+			children = (
+				513DD71E221C268000FF3807 /* PSUnitTestGithubJobsApi.swift */,
+				513DD725221C2B2E00FF3807 /* PSUnitTestSearchGovJobsApi.swift */,
+			);
+			path = "Unit Test Model";
+			sourceTree = "<group>";
+		};
 		51B8C6B1221972CD00064EB4 = {
 			isa = PBXGroup;
 			children = (
 				51B8C6BC221972CD00064EB4 /* JobFinder */,
+				513DD714221C211100FF3807 /* JobFinderTests */,
 				51B8C6BB221972CD00064EB4 /* Products */,
 				0712D73818FBDA187C91F580 /* Pods */,
 				E540995CC0B34334E23CCA48 /* Frameworks */,
@@ -102,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				51B8C6BA221972CD00064EB4 /* JobFinder.app */,
+				513DD713221C211100FF3807 /* JobFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +214,8 @@
 		51B8C6D322197A1600064EB4 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				513DD727221C2B5400FF3807 /* SearchGovJobs.json */,
+				513DD720221C272800FF3807 /* GitHubJobs.json */,
 				51B8C6E522197B9100064EB4 /* Default-568h@2x.png */,
 				51B8C6BD221972CD00064EB4 /* AppDelegate.swift */,
 				51B8C6C4221972CE00064EB4 /* Assets.xcassets */,
@@ -272,6 +326,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		513DD712221C211100FF3807 /* JobFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 513DD71A221C211100FF3807 /* Build configuration list for PBXNativeTarget "JobFinderTests" */;
+			buildPhases = (
+				513DD70F221C211100FF3807 /* Sources */,
+				513DD710221C211100FF3807 /* Frameworks */,
+				513DD711221C211100FF3807 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				513DD719221C211100FF3807 /* PBXTargetDependency */,
+			);
+			name = JobFinderTests;
+			productName = JobFinderTests;
+			productReference = 513DD713221C211100FF3807 /* JobFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		51B8C6B9221972CD00064EB4 /* JobFinder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51B8C6CC221972CE00064EB4 /* Build configuration list for PBXNativeTarget "JobFinder" */;
@@ -302,6 +374,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = ProgressSoft;
 				TargetAttributes = {
+					513DD712221C211100FF3807 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 51B8C6B9221972CD00064EB4;
+					};
 					51B8C6B9221972CD00064EB4 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -321,19 +397,31 @@
 			projectRoot = "";
 			targets = (
 				51B8C6B9221972CD00064EB4 /* JobFinder */,
+				513DD712221C211100FF3807 /* JobFinderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		513DD711221C211100FF3807 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513DD729221C2B5600FF3807 /* SearchGovJobs.json in Resources */,
+				513DD721221C272800FF3807 /* GitHubJobs.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51B8C6B8221972CD00064EB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				51B8C6C8221972CE00064EB4 /* LaunchScreen.storyboard in Resources */,
+				513DD728221C2B5400FF3807 /* SearchGovJobs.json in Resources */,
 				51B8C6E622197B9100064EB4 /* Default-568h@2x.png in Resources */,
 				51B8C6F022197F4B00064EB4 /* PSJobsCellView.xib in Resources */,
 				51B8C6C5221972CE00064EB4 /* Assets.xcassets in Resources */,
+				513DD724221C2AB800FF3807 /* GitHubJobs.json in Resources */,
 				51B8C6C3221972CD00064EB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +500,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		513DD70F221C211100FF3807 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513DD71F221C268000FF3807 /* PSUnitTestGithubJobsApi.swift in Sources */,
+				513DD726221C2B2E00FF3807 /* PSUnitTestSearchGovJobsApi.swift in Sources */,
+				513DD716221C211100FF3807 /* JobFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51B8C6B6221972CD00064EB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +534,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		513DD719221C211100FF3807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51B8C6B9221972CD00064EB4 /* JobFinder */;
+			targetProxy = 513DD718221C211100FF3807 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		51B8C6C1221972CD00064EB4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -456,6 +562,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		513DD71B221C211100FF3807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDMY3TK948;
+				INFOPLIST_FILE = JobFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PS.JobFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobFinder.app/JobFinder";
+			};
+			name = Debug;
+		};
+		513DD71C221C211100FF3807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDMY3TK948;
+				INFOPLIST_FILE = JobFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PS.JobFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobFinder.app/JobFinder";
+			};
+			name = Release;
+		};
 		51B8C6CA221972CE00064EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,6 +763,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		513DD71A221C211100FF3807 /* Build configuration list for PBXNativeTarget "JobFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				513DD71B221C211100FF3807 /* Debug */,
+				513DD71C221C211100FF3807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		51B8C6B5221972CD00064EB4 /* Build configuration list for PBXProject "JobFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

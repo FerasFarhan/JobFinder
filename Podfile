@@ -10,12 +10,13 @@ target 'JobFinder' do
     pod 'SDWebImage' # used for loading online images 
     pod 'EVReflection' # used for dynamic json parsing 
     pod 'DGActivityIndicatorView' # pretty loading indicator
+    pod 'DropDown' # Drop Down view
 
     # Google Places SDK
     pod 'GooglePlaces'
     pod 'GooglePlacePicker'
     pod 'GoogleMaps'
 
-    pod 'DropDown'
+
 
 end
